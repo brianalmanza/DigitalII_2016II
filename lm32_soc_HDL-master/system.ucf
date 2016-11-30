@@ -1,0 +1,75 @@
+
+# ==== Cloclk inputs (CLK) ====
+
+NET "clk"   LOC = "V10"	| IOSTANDARD = "LVCMOS33";
+NET "clk" TNM_NET = sys_clk;
+TIMESPEC TS_sys_clk = PERIOD sys_clk_pin 100 MHz HIGH 50%; 
+
+NET "rst"	LOC = "T10"	| IOSTANDARD = "LVCMOS33";
+#NET "led"	LOC = "U16"	| IOSTANDARD = "LVCMOS33";
+
+
+# ==== UART ====
+NET "uart_txd"	LOC = "H3"	| IOSTANDARD = "LVCMOS33";		
+NET "uart_rxd"	LOC = "L7"	| IOSTANDARD = "LVCMOS33";		
+
+# ==== SPI ====
+ NET "miso"	LOC = "K2"	| IOSTANDARD = "LVCMOS33";		
+ NET "mosi"	LOC = "K1"	| IOSTANDARD = "LVCMOS33";		
+ NET "sck"	LOC = "L4"	| IOSTANDARD = "LVCMOS33";
+ NET "ce"	LOC = "L3"	| IOSTANDARD = "LVCMOS33";		
+
+# ==== I2C ====
+ NET "i2c_sda"	LOC = "T12"	| IOSTANDARD = "LVCMOS33";		
+ NET "i2c_scl"	LOC = "V12"	| IOSTANDARD = "LVCMOS33";		
+
+#====GPIO ====
+NET "gpio0_io<0>"	LOC = "U16"	| IOSTANDARD = "LVCMOS33";
+NET "gpio0_io<1>"	LOC = "V16"	| IOSTANDARD = "LVCMOS33";
+NET "gpio0_io<2>"	LOC = "U15"	| IOSTANDARD = "LVCMOS33";
+NET "gpio0_io<3>"	LOC = "V15"	| IOSTANDARD = "LVCMOS33";
+NET "gpio0_io<4>"	LOC = "M11"	| IOSTANDARD = "LVCMOS33";
+NET "gpio0_io<5>"	LOC = "N11"	| IOSTANDARD = "LVCMOS33";
+NET "gpio0_io<6>"	LOC = "R11"	| IOSTANDARD = "LVCMOS33";
+NET "gpio0_io<7>"	LOC = "T11"	| IOSTANDARD = "LVCMOS33";
+
+#===DISPLAY7 ====
+
+NET "anx[3]" IOSTANDARD = LVCMOS33;
+NET "anx[2]" IOSTANDARD = LVCMOS33;
+NET "anx[1]" IOSTANDARD = LVCMOS33;
+NET "anx[0]" IOSTANDARD = LVCMOS33;
+NET "seg[7]" IOSTANDARD = LVCMOS33;
+NET "seg[6]" IOSTANDARD = LVCMOS33;
+NET "seg[5]" IOSTANDARD = LVCMOS33;
+NET "seg[4]" IOSTANDARD = LVCMOS33;
+NET "seg[3]" IOSTANDARD = LVCMOS33;
+NET "seg[2]" IOSTANDARD = LVCMOS33;
+NET "seg[1]" IOSTANDARD = LVCMOS33;
+NET "seg[0]" IOSTANDARD = LVCMOS33;
+
+NET "anx[3]" LOC = P17;
+NET "anx[2]" LOC = P18;
+NET "anx[1]" LOC = N15;
+NET "anx[0]" LOC = N16;
+NET "seg[7]" LOC = M13;
+NET "seg[6]" LOC = L14;
+NET "seg[5]" LOC = N14;
+NET "seg[4]" LOC = M14;
+NET "seg[3]" LOC = U18;
+NET "seg[2]" LOC = U17;
+NET "seg[1]" LOC = T18;
+NET "seg[0]" LOC = T17;
+
+#===Sonido ====
+NET "clkout"	LOC = "K6" | IOSTANDARD = "LVCMOS33";
+
+
+
+
+
+
+
+
+
+ 
